@@ -13,3 +13,6 @@ pip install -r requirements.txt
 python main.py
 ```
 
+User Interface:
+
+![Example Screenshot](./assets/fasthtml_chat_example.png)

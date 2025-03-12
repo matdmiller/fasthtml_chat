@@ -10,12 +10,14 @@ app, rt = fast_app(exts='ws', hdrs=Theme.zinc.headers())
 DEFAULT_HISTORY = [
     {"role": "system", "content": "You are a helpful assistant that can answer questions and help with tasks."},
     {"role": "assistant", "content": "Hello! I'm the AI Chat Assistant. How can I help you today?"},
-    {"role": "user", "content": "What is the capital of the moon?"},
-    {"role": "assistant", "content": "The capital of the moon is called 'The Moon' and is located on the moon."},
-    {"role": "user", "content": "What is the capital of the moon?"},
-    {"role": "assistant", "content": "The capital of the moon is called 'The Moon' and is located on the moon."},
-    {"role": "user", "content": "What is the capital of the moon?"},
-    {"role": "assistant", "content": "The capital of the moon is called 'The Moon' and is located on the moon."},
+    {"role": "user", "content": "Can you tell me about FastHTML?"},
+    {"role": "assistant", "content": "FastHTML is a Python library that makes it easy to create web applications using Python syntax to generate HTML. It's designed to be simple and intuitive, allowing developers to build web interfaces without having to write HTML, CSS, or JavaScript directly."},
+    {"role": "user", "content": "How does it compare to other frameworks?"},
+    {"role": "assistant", "content": "FastHTML differs from traditional web frameworks in that it allows you to write your entire web application in Python. Unlike frameworks that use template languages or require separate HTML files, FastHTML lets you generate HTML directly through Python function calls. This approach can be particularly appealing if you prefer to stay within the Python ecosystem.\n\nCompared to frameworks like Flask or Django, FastHTML is more focused on the UI generation aspect rather than providing a full-stack solution. It's often used in combination with other libraries or frameworks to handle different aspects of web development. When paired with MonsterUI as shown in this example, it provides a powerful combination for building interactive web interfaces with minimal boilerplate code.\n\nOne of the key advantages of FastHTML is its simplicity and the reduced context-switching between languages, which can lead to faster development cycles for Python developers. However, for very complex front-end requirements, frameworks that use a more traditional separation of concerns might still be preferred by some teams."},
+    {"role": "user", "content": "What about MonsterUI?"},
+    {"role": "assistant", "content": "MonsterUI is a companion library that works with FastHTML to provide pre-built UI components and styling. It helps create modern, responsive interfaces without having to write custom CSS."},
+    {"role": "user", "content": "Thanks for the explanation!"},
+    {"role": "assistant", "content": "You're welcome! Let me know if you have any other questions about FastHTML, MonsterUI, or web development in general."},
 ]
 
 # Initialize OpenAI client
